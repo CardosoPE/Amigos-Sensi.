@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#060607">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20512%20512%22%3E%3Cdefs%3E%3ClinearGradient%20id=%22bg%22%20x1=%220%22%20y1=%220%22%20x2=%220%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%231a1a1f%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23050506%22/%3E%3C/linearGradient%3E%3ClinearGradient%20id=%22rd%22%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23ff4a5b%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23b80f1f%22/%3E%3C/linearGradient%3E%3CradialGradient%20id=%22gl%22%20cx=%2250%25%22%20cy=%2246%25%22%20r=%2255%25%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23e11d2e%22%20stop-opacity=%22.38%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23e11d2e%22%20stop-opacity=%220%22/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect%20width=%22512%22%20height=%22512%22%20rx=%22116%22%20fill=%22url%28%23bg%29%22/%3E%3Crect%20width=%22512%22%20height=%22512%22%20rx=%22116%22%20fill=%22url%28%23gl%29%22/%3E%3Crect%20x=%223%22%20y=%223%22%20width=%22506%22%20height=%22506%22%20rx=%22113%22%20fill=%22none%22%20stroke=%22%23fff%22%20stroke-opacity=%22.12%22%20stroke-width=%223%22/%3E%3Cg%20fill=%22none%22%20stroke=%22url%28%23rd%29%22%20stroke-width=%2220%22%20stroke-linecap=%22round%22%3E%3Cpath%20d=%22M292.3%20110.5A150%20150%200%200%201%20401.5%20219.7%22/%3E%3Cpath%20d=%22M401.5%20292.3A150%20150%200%200%201%20292.3%20401.5%22/%3E%3Cpath%20d=%22M219.7%20401.5A150%20150%200%200%201%20110.5%20292.3%22/%3E%3Cpath%20d=%22M110.5%20219.7A150%20150%200%200%201%20219.7%20110.5%22/%3E%3C/g%3E%3Cg%20stroke=%22%23fff%22%20stroke-width=%2210%22%20stroke-linecap=%22round%22%20opacity=%22.9%22%3E%3Cpath%20d=%22M256%2084V126%22/%3E%3Cpath%20d=%22M428%20256H386%22/%3E%3Cpath%20d=%22M256%20428V386%22/%3E%3Cpath%20d=%22M84%20256H126%22/%3E%3C/g%3E%3Cpath%20d=%22M194%20338%20256%20184%20318%20338%22%20fill=%22none%22%20stroke=%22%23fff%22%20stroke-width=%2228%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22/%3E%3Ccircle%20cx=%22256%22%20cy=%22300%22%20r=%2220%22%20fill=%22%23e11d2e%22%20opacity=%22.9%22/%3E%3Ccircle%20cx=%22256%22%20cy=%22300%22%20r=%2215%22%20fill=%22url%28%23rd%29%22/%3E%3C/svg%3E">
+<title>Amigos.sensei – sensibilidade para Free Fire</title>
+<meta name="description" content="Gere sensibilidade, DPI e tamanho do botão de tiro para o seu celular no Free Fire. Sugestões por modelo, estilo de dedos e taxa de atualização.">
+<meta property="og:type" content="website"><meta property="og:title" content="Amigos.sensei – sensibilidade para Free Fire"><meta property="og:description" content="Sensibilidade, DPI e botão de tiro para o seu celular.">
+<meta property="og:image" content="/icons/icon-512.png"><meta name="twitter:card" content="summary">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/icons/icon-192.png">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060607;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.17);--tx:#f5f5f7;--mut:#9b9ba6;--red:#e11d2e;--red2:#ff3b4d;--red3:#8f0d1b;
+--fh:Sora,"Segoe UI",system-ui,sans-serif;--fb:Inter,system-ui,sans-serif;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;min-height:100%;color:var(--tx);font:16px/1.55 var(--fb);background:var(--bg) radial-gradient(900px 520px at 50% -10%,rgba(225,29,46,.22),transparent 65%),radial-gradient(600px 420px at 100% 60%,rgba(225,29,46,.07),transparent 65%)}
+.app{max-width:560px;margin:0 auto;padding:14px 16px 124px}
+.brand{display:flex;align-items:center;gap:10px;padding:6px 2px 16px;font:600 16px var(--fh);letter-spacing:.01em}
+.brand i{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-style:normal;background:linear-gradient(180deg,var(--red2),var(--red3));color:#fff;font:700 15px var(--fh);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 18px -4px rgba(225,29,46,.7)}
+.brand b{color:var(--red2);font-weight:600}
+.brand .logo{width:34px;height:34px;flex:none;stroke:none;stroke-width:0;fill:none;filter:drop-shadow(0 6px 14px rgba(225,29,46,.5))}
+h1{font:700 34px/1.12 var(--fh);margin:6px 0 6px;letter-spacing:-.02em;outline:0}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--red2),#ff8a94);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font:600 17px var(--fh);margin:0 0 14px;letter-spacing:-.01em}
+.sub{color:var(--mut);margin:0 0 22px}
+.card{position:relative;background:linear-gradient(180deg,#151519,#0d0d10);border:1px solid var(--line);border-radius:20px;padding:18px;margin-bottom:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 1px 2px rgba(0,0,0,.6),0 20px 40px -14px rgba(0,0,0,.75)}
+.card.hot{border-color:rgba(225,29,46,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 0 1px rgba(225,29,46,.08),0 18px 50px -14px rgba(225,29,46,.45)}
+.pill{display:flex;align-items:center;gap:9px;padding:10px 14px;border:1px solid var(--line);border-radius:99px;background:rgba(255,255,255,.03);font-size:14px;margin-bottom:8px;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--red2);box-shadow:0 0 10px var(--red2)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.stat{text-align:center;padding:22px 10px;margin:0}
+.ring{width:46px;height:46px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;border:1px solid rgba(225,29,46,.55);background:radial-gradient(circle,rgba(225,29,46,.25),rgba(225,29,46,.04));color:#fff;box-shadow:0 0 22px -4px rgba(225,29,46,.6)}
+.num{font:700 42px/1 var(--fh);letter-spacing:-.02em}
+.lab{color:var(--mut);font-size:13px;margin-top:6px}
+.cta{display:flex;align-items:center;gap:14px;width:100%;text-align:left;cursor:pointer;color:var(--tx);font:inherit;transition:transform .2s,border-color .2s}
+.cta:hover{transform:translateY(-2px);border-color:rgba(225,29,46,.5)}.cta:active{transform:scale(.99)}
+.cta .ic{flex:0 0 50px;height:50px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(180deg,var(--red2),var(--red3));box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 8px 20px -6px rgba(225,29,46,.7)}
+.cta b{display:block;font:600 16px var(--fh)}.cta span{color:var(--mut);font-size:14px}
+label{display:block;color:var(--mut);font-size:13px;font-weight:500;margin:14px 0 6px}
+select,input{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line2);background:#09090b;color:var(--tx);font:inherit;transition:border-color .2s,box-shadow .2s}
+select:hover,input:hover{border-color:rgba(255,255,255,.28)}
+select:focus,input:focus{outline:0;border-color:var(--red2);box-shadow:0 0 0 3px rgba(225,29,46,.25)}
+input[aria-invalid="true"]{border-color:var(--red2)}
+button:focus-visible,summary:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.err{color:#ff7482;font-size:13px;margin:8px 0 0;min-height:0}
+.row{display:flex;gap:10px;margin-top:16px}.row>*{flex:1}
+.btn{cursor:pointer;border:0;border-radius:13px;padding:14px;font:600 15px var(--fh);color:#fff;background:linear-gradient(180deg,var(--red2),var(--red));box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 10px 26px -8px rgba(225,29,46,.75);transition:transform .15s,filter .2s,box-shadow .2s}
+.btn:hover{filter:brightness(1.08)}.btn:active{transform:scale(.97)}
+.btn.alt{background:rgba(255,255,255,.04);box-shadow:none;border:1px solid var(--line2)}
+.btn.alt:hover{background:rgba(255,255,255,.09)}
+.btn.danger{background:transparent;box-shadow:none;color:#ff7482;border:1px solid rgba(255,59,77,.5)}
+.btn[disabled]{opacity:.4;cursor:not-allowed;filter:none;transform:none}
+.bars{display:grid;gap:15px;margin:6px 0}
+.bar{display:grid;grid-template-columns:106px 1fr 40px;gap:12px;align-items:center;font-size:14px}
+.track{height:8px;border-radius:5px;background:#050506;border:1px solid var(--line);overflow:hidden}
+.fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--red3),var(--red2));box-shadow:0 0 14px rgba(255,59,77,.6);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.white .fill{background:linear-gradient(90deg,var(--red2),#fff);box-shadow:0 0 16px rgba(255,255,255,.4)}
+.bar b{text-align:right;font:600 16px var(--fh)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini{padding:18px 12px;text-align:center}
+.mini .num{font-size:32px}
+.phone{position:relative;width:100%;max-width:360px;margin:6px auto;border:5px solid #1b1b20;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#1a1a20,#08080a);box-shadow:0 20px 40px -12px #000}
+.fire{position:absolute;right:8%;bottom:14%;aspect-ratio:1;border-radius:50%;border:2px solid #fff;background:radial-gradient(circle,rgba(255,59,77,.55),rgba(225,29,46,.2));box-shadow:0 0 18px rgba(255,59,77,.7);display:grid;place-items:center;color:#fff;font:700 9px var(--fh);letter-spacing:.06em;transition:width .35s}
+.note{color:var(--mut);font-size:13px;margin:12px 0 0}
+details{border:1px solid var(--line);border-radius:14px;padding:0 16px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+summary{cursor:pointer;padding:15px 0;font:600 14px var(--fh);list-style:none;display:flex;justify-content:space-between;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--red2);font-size:18px;line-height:1}details[open] summary::after{content:"–"}
+details p,details ol{color:var(--mut);font-size:14px;margin:0 0 15px}details ol{padding-left:20px}
+.view{display:none}.view.on{display:block}
+.view.on>*{animation:up .45s cubic-bezier(.2,.8,.2,1) backwards}
+.view.on>*:nth-child(2){animation-delay:.04s}.view.on>*:nth-child(3){animation-delay:.08s}.view.on>*:nth-child(4){animation-delay:.12s}.view.on>*:nth-child(5){animation-delay:.16s}
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#hist pre{margin:8px 0 12px;white-space:pre-wrap;font:13px/1.55 var(--fb);color:var(--tx)}
+.meta{color:var(--mut);font-size:12px;display:flex;justify-content:space-between}
+.chip{font:600 11px var(--fh);padding:2px 9px;border-radius:99px;border:1px solid var(--line2)}.chip.p{border-color:var(--red2);color:#ff7482}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;justify-content:center;padding:0 12px calc(env(safe-area-inset-bottom,0px) + 10px)}
+nav .in{width:100%;max-width:536px;display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:8px;border-radius:24px;border:1px solid var(--line2);background:rgba(12,12,14,.88);backdrop-filter:blur(16px);box-shadow:0 18px 40px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.06)}
+nav button{background:transparent;border:0;border-radius:17px;color:var(--mut);padding:9px 2px;cursor:pointer;font:600 10px var(--fb);letter-spacing:.08em;display:flex;flex-direction:column;align-items:center;gap:4px;transition:background .2s,color .2s}
+nav button:hover{color:#fff}
+nav button[aria-current="page"]{background:linear-gradient(180deg,var(--red2),var(--red3));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 8px 18px -6px rgba(225,29,46,.7)}
+svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 100px);transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:40;padding:11px 18px;border-radius:99px;background:#fff;color:#0a0a0b;font:600 14px var(--fh);box-shadow:0 12px 30px rgba(0,0,0,.6);transition:.3s}
+.toast.on{opacity:1;transform:translate(-50%,0)}.toast.bad{background:var(--red);color:#fff}
+.blur{filter:blur(6px);user-select:none;pointer-events:none}
+.pay{margin-top:16px;padding:18px;border:1px dashed rgba(255,59,77,.55);border-radius:16px;text-align:center;background:rgba(225,29,46,.07)}
+.pay input{margin-top:0;text-align:center;letter-spacing:.08em}
+.price{font:700 38px var(--fh);letter-spacing:-.02em}
+a.btn{display:block;text-align:center;text-decoration:none}
+.plan{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.plan:first-child{border-top:0;padding-top:0}.plan b{font:700 17px var(--fh)}.plan .btn{padding:10px 16px;font-size:14px}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 25%,#000 0,transparent 75%);mask-image:radial-gradient(ellipse 80% 60% at 50% 25%,#000 0,transparent 75%)}
+.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 38%,rgba(255,59,77,.07) 50%,transparent 62%)}
+.bg .orb{position:absolute;border-radius:50%}
+.bg .o1{width:560px;height:560px;top:-200px;left:-160px;background:radial-gradient(circle,rgba(225,29,46,.38),transparent 65%);animation:drift 20s ease-in-out infinite alternate}
+.bg .o2{width:460px;height:460px;bottom:-160px;right:-140px;background:radial-gradient(circle,rgba(225,29,46,.24),transparent 65%);animation:drift 26s ease-in-out infinite alternate-reverse}
+.bg .cross{position:absolute;width:560px;height:560px;right:-170px;top:14%;stroke:#fff;stroke-width:2;fill:none;opacity:.06;animation:spin 90s linear infinite}
+.bg .vg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,transparent 50%,rgba(0,0,0,.7) 100%)}
+.bg .nz{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.05;mix-blend-mode:overlay}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,30px) scale(1.12)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bg .map{position:absolute;left:50%;top:48%;width:max(760px,120vw);height:auto;transform:translate(-50%,-50%);opacity:.38}
+.bg .zg{transform-box:fill-box;transform-origin:50% 50%;animation:zone 16s ease-in-out infinite alternate}
+@keyframes zone{from{transform:scale(1)}to{transform:scale(.55)}}
+.bg .radar{position:absolute;top:64px;right:-36px;width:190px;height:190px;border-radius:50%;border:1px solid rgba(255,255,255,.2);opacity:.6;overflow:hidden;background:radial-gradient(circle,rgba(225,29,46,.1),transparent 70%),repeating-radial-gradient(circle,transparent 0 30px,rgba(255,255,255,.09) 30px 31px)}
+.bg .sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(255,59,77,.55),transparent 28%);animation:spin 5s linear infinite}
+.bg .blip{position:absolute;width:7px;height:7px;border-radius:50%;background:#ff3b4d;box-shadow:0 0 10px #ff3b4d;animation:ping 2.6s ease-in-out infinite}
+.bg .k1{top:34%;left:58%}.bg .k2{top:62%;left:36%;animation-delay:-1s}.bg .k3{top:46%;left:76%;animation-delay:-1.8s}
+@keyframes ping{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.3)}}
+.bg .drop{position:absolute;top:0;width:64px;height:88px;stroke:none;fill:none;opacity:.55;animation:fall 40s linear infinite}
+.bg .d1{left:10%}.bg .d2{left:68%;width:52px;animation-duration:50s;animation-delay:-18s;opacity:.4}.bg .d3{left:40%;width:44px;animation-duration:58s;animation-delay:-34s;opacity:.32}
+@keyframes fall{0%{transform:translate3d(0,-20vh,0) rotate(-4deg)}50%{transform:translate3d(26px,50vh,0) rotate(4deg)}100%{transform:translate3d(-12px,120vh,0) rotate(-4deg)}}
+.bg .pop{position:absolute;font:700 24px Sora,sans-serif;color:#ff3b4d;opacity:0;text-shadow:0 0 14px rgba(255,59,77,.6);animation:pop 8s ease-out infinite}
+.bg .p1{left:8%;top:30%}.bg .p2{right:12%;top:56%;color:#fff;font-style:italic;animation-delay:-2s;text-shadow:0 0 14px rgba(255,255,255,.4)}.bg .p3{left:20%;top:72%;font-size:20px;animation-delay:-4s}.bg .p4{right:8%;top:24%;color:#fff;font-size:18px;letter-spacing:.14em;animation-delay:-5.5s}.bg .p5{left:44%;top:84%;font-size:16px;color:#fff;animation-delay:-7s}
+@keyframes pop{0%{opacity:0;transform:translateY(14px) scale(.8)}6%{opacity:.6;transform:translateY(0) scale(1.1)}18%{opacity:.45;transform:translateY(-8px) scale(1)}32%,100%{opacity:0;transform:translateY(-34px)}}
+.bg .trc{position:absolute;width:170px;height:2px;background:linear-gradient(90deg,transparent,#ff6b78);opacity:0;animation:trc 9s linear infinite}
+.bg .t1{left:92%;top:14%}.bg .t2{left:100%;top:46%;animation-delay:-3.5s}.bg .t3{left:96%;top:70%;animation-delay:-6s}
+@keyframes trc{0%{opacity:0;transform:translate(0,0) rotate(-24deg)}2%{opacity:.85}9%{opacity:0;transform:translate(-560px,250px) rotate(-24deg)}100%{opacity:0}}
+.bg .fl{position:absolute;left:0;bottom:0;width:100%;height:24vh;min-height:150px;stroke:none;fill:none;opacity:.8}
+.bg .fk{transform-box:fill-box;transform-origin:50% 100%;animation:flk 2.4s ease-in-out infinite alternate}
+@keyframes flk{from{transform:scale(1,.82) skewX(-4deg)}to{transform:scale(1.08,1.12) skewX(5deg)}}
+.hidden{display:none!important}
+@media(max-width:899px){.bg .nz,.bg .trc,.bg .drop,.bg .pop,.bg .fl{display:none}.bg .vg{background:radial-gradient(ellipse at 50% 40%,transparent 50%,rgba(0,0,0,.6) 100%)}}
+@media(hover:none){.cta:hover{transform:none}}
+@media(min-width:900px){
+ .app{max-width:1120px;margin-left:240px;margin-right:auto;padding:28px 40px 60px}
+ nav{top:0;right:auto;width:240px;padding:28px 16px;align-items:flex-start;border-right:1px solid var(--line);background:linear-gradient(180deg,#0c0c0f,#060607)}
+ nav .in{display:flex;flex-direction:column;gap:6px;padding:0;border:0;background:none;box-shadow:none;backdrop-filter:none;max-width:none;margin-top:64px}
+ nav button{flex-direction:row;justify-content:flex-start;gap:12px;padding:13px 16px;font-size:12px}
+ .brand{position:fixed;left:16px;top:26px;z-index:25;padding:0}
+ h1{font-size:44px}
+ #v-gen.on{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:20px;align-items:start}
+ #v-gen>h1,#v-gen>.sub{grid-column:1/-1}
+ #v-gen>.sel{grid-column:1;grid-row:3}#v-gen>.prev{grid-column:1;grid-row:4}#v-gen>.res{grid-column:2;grid-row:3}#v-gen>.two{grid-column:2;grid-row:4}
+ #v-home.on{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;align-items:start}
+ #v-home>h1,#v-home>.sub,#v-home>.pill{grid-column:1/-1}
+ .toast{bottom:40px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<noscript><p style="padding:24px;text-align:center">Ative o JavaScript para usar o Amigos.sensei.</p></noscript>
+<div class="bg" aria-hidden="true">
+<i class="orb o1"></i><i class="orb o2"></i>
+<svg class="map" viewBox="0 0 800 800"><defs><path id="isl" d="M120 420C100 300 210 200 330 190C430 120 560 150 610 250C700 300 720 430 650 520C610 620 480 680 380 650C260 700 140 600 120 420Z"/></defs>
+<g fill="none" stroke="#fff" stroke-width="1.4"><use href="#isl"/><use href="#isl" transform="translate(400 410) scale(0.82) translate(-400 -410)"/><use href="#isl" transform="translate(400 410) scale(0.64) translate(-400 -410)"/><use href="#isl" transform="translate(400 410) scale(0.46) translate(-400 -410)"/><use href="#isl" transform="translate(400 410) scale(0.3) translate(-400 -410)"/></g>
+<g class="zg" fill="none"><circle cx="400" cy="410" r="300" stroke="#fff" stroke-width="3" stroke-dasharray="2 10"/><circle cx="400" cy="410" r="360" stroke="#e11d2e" stroke-width="110" opacity=".16"/></g></svg>
+<div class="radar"><i class="sweep"></i><b class="blip k1"></b><b class="blip k2"></b><b class="blip k3"></b></div>
+<svg class="drop d1" viewBox="0 0 80 110"><path d="M8 44Q40 -8 72 44Q56 36 40 44Q24 36 8 44Z" fill="#e11d2e" fill-opacity=".85"/><path d="M8 44 34 84M40 44V84M72 44 46 84" stroke="#fff" stroke-opacity=".6" stroke-width="1.5"/><rect x="28" y="84" width="24" height="20" rx="3" fill="#15151a" stroke="#fff" stroke-opacity=".8" stroke-width="2"/><path d="M28 92H52" stroke="#e11d2e" stroke-width="4"/></svg>
+<svg class="drop d2" viewBox="0 0 80 110"><path d="M8 44Q40 -8 72 44Q56 36 40 44Q24 36 8 44Z" fill="#fff" fill-opacity=".8"/><path d="M8 44 34 84M40 44V84M72 44 46 84" stroke="#fff" stroke-opacity=".6" stroke-width="1.5"/><rect x="28" y="84" width="24" height="20" rx="3" fill="#15151a" stroke="#fff" stroke-opacity=".8" stroke-width="2"/><path d="M28 92H52" stroke="#e11d2e" stroke-width="4"/></svg>
+<svg class="drop d3" viewBox="0 0 80 110"><path d="M8 44Q40 -8 72 44Q56 36 40 44Q24 36 8 44Z" fill="#e11d2e" fill-opacity=".85"/><path d="M8 44 34 84M40 44V84M72 44 46 84" stroke="#fff" stroke-opacity=".6" stroke-width="1.5"/><rect x="28" y="84" width="24" height="20" rx="3" fill="#15151a" stroke="#fff" stroke-opacity=".8" stroke-width="2"/><path d="M28 92H52" stroke="#e11d2e" stroke-width="4"/></svg>
+<span class="pop p1">-118</span><span class="pop p2">CAPA!</span><span class="pop p3">-42</span><span class="pop p4">HEADSHOT</span><span class="pop p5">+1 KILL</span>
+<i class="trc t1"></i><i class="trc t2"></i><i class="trc t3"></i>
+<svg class="fl" viewBox="0 0 800 200" preserveAspectRatio="none"><defs><linearGradient id="fg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e11d2e"/><stop offset=".6" stop-color="#ff3b4d" stop-opacity=".6"/><stop offset="1" stop-color="#ff8a94" stop-opacity="0"/></linearGradient><linearGradient id="fb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e11d2e" stop-opacity="0"/><stop offset="1" stop-color="#e11d2e" stop-opacity=".5"/></linearGradient><path id="fp" d="M0 0C-24-20-22-50-4-78C-2-60 8-52 14-40C22-26 16-10 0 0Z"/></defs><rect y="110" width="800" height="90" fill="url(#fb)"/><g transform="translate(30 200) scale(1.3 1.5)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-0.2s"/></g><g transform="translate(110 200) scale(1.6 2.1)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-1.1s"/></g><g transform="translate(190 200) scale(1.2 1.4)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-0.6s"/></g><g transform="translate(275 200) scale(1.8 2.3)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-1.7s"/></g><g transform="translate(360 200) scale(1.4 1.7)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-0.3s"/></g><g transform="translate(445 200) scale(1.9 2.4)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-1.3s"/></g><g transform="translate(530 200) scale(1.3 1.6)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-0.9s"/></g><g transform="translate(615 200) scale(1.7 2.2)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-0.1s"/></g><g transform="translate(700 200) scale(1.4 1.8)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-1.5s"/></g><g transform="translate(775 200) scale(1.5 1.9)"><use class="fk" href="#fp" fill="url(#fg)" style="animation-delay:-0.7s"/></g></svg>
+<i class="vg"></i><i class="nz"></i></div>
+<header class="brand"><svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
+<defs>
+<linearGradient id="lgbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1f"/><stop offset="1" stop-color="#050506"/></linearGradient>
+<linearGradient id="lgrd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4a5b"/><stop offset="1" stop-color="#b80f1f"/></linearGradient>
+<radialGradient id="lggl" cx="50%" cy="46%" r="55%"><stop offset="0" stop-color="#e11d2e" stop-opacity=".38"/><stop offset="1" stop-color="#e11d2e" stop-opacity="0"/></radialGradient>
+<filter id="lgsh" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect width="512" height="512" rx="116" fill="url(#lgbg)"/>
+<rect width="512" height="512" rx="116" fill="url(#lggl)"/>
+<rect x="3" y="3" width="506" height="506" rx="113" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="3"/>
+<g fill="none" stroke="url(#lgrd)" stroke-width="20" stroke-linecap="round">
+<path d="M292.3 110.5A150 150 0 0 1 401.5 219.7"/>
+<path d="M401.5 292.3A150 150 0 0 1 292.3 401.5"/>
+<path d="M219.7 401.5A150 150 0 0 1 110.5 292.3"/>
+<path d="M110.5 219.7A150 150 0 0 1 219.7 110.5"/>
+</g>
+<g stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".9">
+<path d="M256 84V126"/><path d="M428 256H386"/><path d="M256 428V386"/><path d="M84 256H126"/>
+</g>
+<path d="M194 338 256 184 318 338" fill="none" stroke="#fff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="256" cy="300" r="20" fill="#e11d2e" filter="url(#lgsh)" opacity=".9"/>
+<circle cx="256" cy="300" r="15" fill="url(#lgrd)"/>
+</svg><span>Amigos<b>.sensei</b></span></header>
+<main class="app">
+
+<section class="view on" id="v-home">
+<div class="pill"><i class="dot"></i><span id="h-line">Pronto para gerar sua sensi</span></div>
+<h1 tabindex="-1">Sua mira, <em>afinada</em></h1><p class="sub">Sensibilidade, DPI e botão de tiro para o seu celular.</p>
+<div class="stats" style="grid-column:1/-1;width:100%">
+<div class="card stat"><div class="ring"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><div class="num" id="h-phones">0</div><div class="lab">Celulares na lista</div></div>
+<div class="card stat"><div class="ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div><div class="num" id="h-saved">0</div><div class="lab">Suas sensis</div></div>
+</div>
+<button class="card cta hot" id="go-gen"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><span><b>Gerar minha sensi</b><span>Escolha o celular e receba os valores</span></span></button>
+<button class="card cta" id="install"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg></span><span><b>Baixar App</b><span>Adicione à tela inicial do navegador</span></span></button>
+<div class="card" id="plans"><h2>Preços</h2><div id="plan-list"></div></div>
+<div class="card" id="inst-box"><h2>Instalar na tela inicial</h2>
+<div id="applink-box"><p class="note" style="margin:0 0 6px">Link do app:</p><p class="note" id="applink-text" style="margin:0 0 4px;word-break:break-all;color:var(--tx)"></p>
+<div class="row" style="margin:12px 0 16px"><button class="btn alt" id="applink">Copiar link do app</button></div></div>
+<details><summary>Android (Chrome)</summary><ol><li>Abra este link no Chrome. Se estiver dentro do Instagram ou WhatsApp, toque nos três pontinhos e escolha "Abrir no navegador".</li><li>Toque nos três pontinhos do Chrome.</li><li>Escolha "Adicionar à tela inicial" ou "Instalar app".</li></ol></details>
+<details><summary>iPhone (Safari)</summary><ol><li>Abra este link no Safari.</li><li>Toque no botão de compartilhar.</li><li>Escolha "Adicionar à Tela de Início".</li></ol></details></div>
+<div class="card"><h2>Dúvidas</h2>
+<details><summary>O que é o Amigos.sensei?</summary><p>Um gerador que sugere sensibilidade (0 a 200), DPI e tamanho do botão de atirar para o seu celular no Free Fire.</p></details>
+<details><summary>Os valores são oficiais?</summary><p>Não. São sugestões geradas dentro de faixas parecidas com as usadas pela comunidade. Teste no treino e ajuste de 5 em 5 pontos.</p></details>
+<details><summary>Como o botão e o DPI são calculados?</summary><p>O botão parte de um tamanho físico de 7 a 10 mm, faixa que o Google recomenda para toques (48 dp equivalem a cerca de 9 mm). Quanto mais dedos, menor a meta: 10 mm com 2 dedos, 9 mm com 3 e 8 mm com 4. A porcentagem depende do tamanho do botão padrão do jogo, que a Garena não publica, então usamos uma estimativa e você pode calibrar com uma régua. O HUD aceita até 200%. O DPI dos tutoriais é a Menor largura (dp) do Android: o padrão costuma ficar entre 360 e 411 dp e não há prova de que um valor específico seja melhor.</p></details>
+<details><summary>Tem DPI no iPhone?</summary><p>Não. O iOS não deixa mudar o DPI. No iPhone e no iPad, ajuste só a sensibilidade.</p></details></div>
+</section>
+
+<section class="view" id="v-gen">
+<h1 tabindex="-1">Gerador</h1><p class="sub">Escolha seu celular</p>
+<div class="card sel"><label for="brand" style="margin-top:0">Marca</label><select id="brand"></select>
+<label for="q">Buscar modelo</label><input id="q" type="search" placeholder="Ex.: A54, Note 12, iPhone 13" autocomplete="off">
+<label for="model">Modelo</label><select id="model"></select>
+<div id="custom" class="hidden"><div class="two"><div><label for="cd">Tela (pol.)</label><input id="cd" type="number" step="0.1" min="4" max="13" value="6.5" inputmode="decimal"></div><div><label for="chz">Taxa (Hz)</label><input id="chz" type="number" min="30" max="165" value="60" inputmode="numeric"></div></div>
+<label for="cos">Sistema</label><select id="cos"><option value="a">Android</option><option value="i">iOS</option></select>
+<p class="err" id="cerr" role="alert"></p></div>
+<label for="style">Estilo de jogo</label><select id="style"><option value="2">2 dedos</option><option value="3" selected>3 dedos</option><option value="4">4 dedos (garra)</option></select>
+<p class="note" id="spec"></p>
+<details style="margin-top:14px"><summary>Calibrar botão e DPI (opcional)</summary>
+<p class="note" style="margin:0 0 4px">Deixa o cálculo exato para o seu aparelho.</p>
+<label for="cal-pct">Tamanho atual do botão de atirar no jogo (%)</label><input id="cal-pct" type="number" min="10" max="200" inputmode="numeric" placeholder="Ex.: 100">
+<label for="cal-mm">Diâmetro desse botão na tela (mm, medido com régua)</label><input id="cal-mm" type="number" min="3" max="30" step="0.5" inputmode="decimal" placeholder="Ex.: 11">
+<label for="cal-dp">Menor largura atual (dp, nas Opções do desenvolvedor)</label><input id="cal-dp" type="number" min="240" max="800" inputmode="numeric" placeholder="Ex.: 411">
+<p class="err" id="calerr" role="alert"></p></details>
+<div class="row"><button class="btn alt" id="me">Salvar como meu celular</button></div></div>
+<div class="card hot res"><h2>Sensibilidade (0 a 200)</h2><div class="bars" id="g-bars"></div><div class="pay hidden" id="pay-normal"></div>
+<div class="row"><button class="btn" id="gen">Gerar nova</button><button class="btn alt" id="copy">Copiar</button></div>
+<div class="row" style="margin-top:10px"><button class="btn alt" id="save">Salvar no histórico</button></div></div>
+<div class="two"><div class="card mini"><div class="num" id="g-pct">–</div><div class="lab" id="g-pctlab">Botão de atirar</div></div><div class="card mini"><div class="num" id="g-dpi">–</div><div class="lab" id="g-os">DPI</div></div></div>
+<div class="card prev"><h2>Prévia do botão</h2><div class="phone" id="g-phone"><div class="fire" id="g-fire"></div></div><p class="note" id="g-why"></p><p class="note" id="g-dpinote"></p></div>
+</section>
+
+<section class="view" id="v-pro">
+<h1 tabindex="-1">Proibida</h1><p class="sub">A sensi mais agressiva para o celular escolhido no Gerador</p>
+<div class="card hot"><p class="note" style="margin:0 0 14px;color:var(--tx)">Mira muito rápida: gruda no vermelho com arrasto mínimo, mas é difícil de controlar. Use só se você já tem treino.</p>
+<div class="pill"><i class="dot"></i><span id="p-phone">–</span></div>
+<div class="bars white" id="p-bars"></div><div class="pay hidden" id="pay-proibida"></div>
+<div class="row"><button class="btn" id="pgen">Gerar nova</button><button class="btn alt" id="pcopy">Copiar</button></div>
+<div class="row" style="margin-top:10px"><button class="btn alt" id="psave">Salvar no histórico</button></div>
+<p class="note">Botão de atirar sugerido: <b id="p-pct">–</b> · DPI: <b id="p-dpi">–</b></p></div>
+</section>
+
+<section class="view" id="v-hist">
+<h1 tabindex="-1">Histórico</h1><p class="sub">Sensis que você salvou neste aparelho</p>
+<div id="hist"></div>
+<div class="row"><button class="btn danger" id="clear">Apagar histórico</button></div>
+</section>
+
+<section class="view" id="v-me">
+<h1 tabindex="-1">Perfil</h1><p class="sub">Seu celular e preferências</p>
+<div class="card"><h2>Meu celular</h2><p id="me-text" style="margin:0 0 6px">Nenhum celular salvo ainda.</p><p class="note" style="margin:0">Salve no Gerador para a página abrir já com ele selecionado.</p>
+<div class="row"><button class="btn" id="me-use">Usar no Gerador</button><button class="btn danger" id="me-del">Remover</button></div></div>
+<div class="card"><h2>Sobre os valores</h2><p class="note" style="margin:0">Sensibilidade em escala de 0 a 200. Telas de 120 Hz ou mais e telas grandes ganham alguns pontos. O DPI vale só para Android.</p></div>
+</section>
+</main>
+
+<nav aria-label="Principal"><div class="in">
+<button data-v="home" aria-current="page"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"/></svg>HOME</button>
+<button data-v="gen"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>GERADOR</button>
+<button data-v="pro"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>PROIBIDA</button>
+<button data-v="hist"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5M12 7v5l3 2"/></svg>HISTÓRICO</button>
+<button data-v="me"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>PERFIL</button>
+</div></nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const D={
+"Samsung":"Galaxy A03 6.5 60;A03s 6.5 60;A04 6.5 60;A04e 6.5 60;A04s 6.5 90;A05 6.7 60;A05s 6.7 90;A06 6.7 60;A10 6.2 60;A10s 6.2 60;A11 6.4 60;A12 6.5 60;A13 6.6 60;A14 6.6 90;A15 6.5 90;A16 6.7 90;A20 6.4 60;A21s 6.5 60;A22 6.4 90;A23 6.6 90;A24 6.5 90;A25 6.5 120;A30 6.4 60;A31 6.4 60;A32 6.4 90;A33 6.4 90;A34 6.6 120;A35 6.6 120;A50 6.4 60;A51 6.5 60;A52 6.5 90;A53 6.5 120;A54 6.4 120;A55 6.6 120;A71 6.7 60;A72 6.7 90;A73 6.7 120;M13 6.6 60;M14 6.6 90;M23 6.6 120;M34 6.5 120;M54 6.7 120;S10 6.1 60;S20 6.2 120;S20 FE 6.5 120;S21 6.2 120;S21 FE 6.4 120;S22 6.1 120;S22 Ultra 6.8 120;S23 6.1 120;S23 FE 6.4 120;S23 Ultra 6.8 120;S24 6.2 120;S24 Ultra 6.8 120;S25 6.2 120;S25 Ultra 6.9 120;Note 10 6.3 60;Note 20 Ultra 6.9 120;Z Flip5 6.7 120",
+"Motorola":"Moto E7 6.5 60;E13 6.5 60;E20 6.5 60;E22 6.5 90;E32 6.5 90;E40 6.5 90;G04 6.6 90;G05 6.7 90;G8 Power 6.4 60;G9 Play 6.5 60;G9 Power 6.8 60;G10 6.5 60;G13 6.5 90;G14 6.5 60;G20 6.5 90;G23 6.5 90;G24 6.6 90;G30 6.5 90;G31 6.4 60;G32 6.5 90;G34 6.5 120;G41 6.4 60;G42 6.4 60;G51 6.8 120;G52 6.6 90;G53 6.5 120;G54 6.5 120;G60 6.8 120;G71 6.4 60;G72 6.6 120;G73 6.5 120;G84 6.55 120;G100 6.7 90;Edge 20 6.7 144;Edge 30 6.5 144;Edge 40 6.55 144;Edge 40 Neo 6.55 144;Edge 50 Fusion 6.7 144;One Fusion 6.5 60;One Hyper 6.5 60",
+"Xiaomi":"Redmi 9 6.53 60;9A 6.53 60;9C 6.53 60;9T 6.53 60;10 6.5 90;10C 6.71 60;12 6.79 90;12C 6.71 60;13 6.79 90;13C 6.74 90;A1 6.52 60;A2 6.52 60;A3 6.71 90;Note 8 6.3 60;Note 9 6.53 60;Note 9S 6.67 60;Note 10 6.43 60;Note 10 Pro 6.67 120;Note 11 6.43 90;Note 11 Pro 6.67 120;Note 12 6.67 120;Note 12 Pro 6.67 120;Note 13 6.67 120;Note 13 Pro 6.67 120;Note 14 6.67 120;Mi 9T 6.39 60;Mi 11 Lite 6.55 90;Xiaomi 12 6.28 120;Xiaomi 13 6.36 120;Xiaomi 13T 6.67 144;Xiaomi 14 6.36 120",
+"Poco":"Poco C40 6.71 60;C65 6.74 90;M3 6.53 60;M4 Pro 6.43 90;M5 6.58 90;M6 Pro 6.79 90;X3 NFC 6.67 120;X3 Pro 6.67 120;X4 Pro 6.67 120;X5 6.67 120;X5 Pro 6.67 120;X6 6.67 120;X6 Pro 6.67 120;X7 6.67 120;F3 6.67 120;F4 6.67 120;F5 6.67 120;F6 6.67 120;X8 Pro 6.59 120 2.17",
+"Apple (iOS)":"iPhone 6s 4.7 60 1.78;7 4.7 60 1.78;8 4.7 60 1.78;8 Plus 5.5 60 1.78;SE 2020 4.7 60 1.78;SE 2022 4.7 60 1.78;X 5.8 60 2.16;XR 6.1 60 2.05;XS 5.8 60 2.16;XS Max 6.5 60 2.16;11 6.1 60 2.05;11 Pro 5.8 60 2.16;11 Pro Max 6.5 60 2.16;12 mini 5.4 60 2.16;12 6.1 60 2.16;12 Pro 6.1 60 2.16;12 Pro Max 6.7 60 2.16;13 mini 5.4 60 2.16;13 6.1 60 2.16;13 Pro 6.1 120 2.16;13 Pro Max 6.7 120 2.16;14 6.1 60 2.16;14 Plus 6.7 60 2.16;14 Pro 6.1 120 2.17;14 Pro Max 6.7 120 2.17;15 6.1 60 2.17;15 Plus 6.7 60 2.17;15 Pro 6.1 120 2.17;15 Pro Max 6.7 120 2.17;16 6.1 60 2.17;16 Plus 6.7 60 2.17;16 Pro 6.3 120 2.17;16 Pro Max 6.9 120 2.17;17 6.3 120 2.17;17 Pro 6.3 120 2.17;17 Pro Max 6.9 120 2.17;iPad 9ª geração 10.2 60 1.33;iPad Air 5 10.9 60 1.43;iPad mini 6 8.3 60 1.43;iPad Pro 11 11 120 1.43;iPad Pro 12.9 12.9 120 1.33",
+"Realme":"C11 6.5 60;C15 6.5 60;C21Y 6.5 60;C25 6.5 60;C30 6.5 60;C33 6.5 60;C35 6.6 60;C51 6.74 90;C53 6.74 90;C55 6.72 90;C61 6.74 90;8 6.4 60;8i 6.6 120;9 6.4 90;9i 6.6 90;10 6.4 90;11 6.43 90;11 Pro 6.7 120;12 Pro 6.7 120;GT Neo 3 6.7 120;GT Neo 5 6.74 144;GT 6 6.78 120;Narzo 50 6.6 120;Narzo 60 6.43 90",
+"Infinix":"Hot 10 6.78 90;Hot 11 6.6 90;Hot 12 6.82 90;Hot 20 6.82 90;Hot 30 6.78 90;Hot 40 6.78 120;Hot 40i 6.56 90;Smart 7 6.6 60;Smart 8 6.6 90;Note 11 6.7 60;Note 12 6.7 120;Note 30 6.78 120;Note 40 6.78 120;Zero 20 6.7 60;Zero 30 6.78 144",
+"Tecno":"Spark 8 6.6 90;Spark 10 6.6 90;Spark 20 6.56 90;Camon 20 6.67 120;Pova 5 6.78 120;Pova 6 6.78 120",
+"Oppo":"A15 6.52 60;A16 6.52 60;A17 6.56 60;A54 6.51 60;A57 6.56 90;A58 6.72 90;A78 6.43 90;Reno 6 6.43 90;Reno 8 6.43 90;Reno 10 6.7 120;Find X5 6.55 120",
+"Vivo":"Y15 6.35 60;Y20 6.51 60;Y21 6.51 60;Y22 6.55 90;Y27 6.64 90;Y36 6.64 90;Y100 6.67 120;V23 6.44 90;V27 6.78 120;V29 6.78 120;X80 6.78 120",
+"OnePlus":"Nord 6.44 90;Nord 2 6.43 90;Nord CE 3 Lite 6.72 120;9 6.55 120;10 Pro 6.7 120;11 6.7 120;12 6.82 120",
+"Honor":"X7 6.74 90;X8 6.7 90;X9b 6.78 120;90 6.7 120",
+"Google Pixel":"Pixel 6 6.4 90;6a 6.1 60;7 6.3 90;7a 6.1 90;8 6.2 120;8a 6.1 120;8 Pro 6.7 120;9 6.3 120",
+"ASUS / ROG":"ROG Phone 2 6.59 120;ROG Phone 3 6.59 144;ROG Phone 5 6.78 144;ROG Phone 6 6.78 165;ROG Phone 7 6.78 165;ROG Phone 8 6.78 165;Zenfone Max M2 6.26 60;Zenfone Max Pro M2 6.3 60;Zenfone 8 5.9 120;Zenfone 9 5.9 120;Zenfone 10 5.9 144",
+"Gamer (Red Magic, Black Shark)":"Red Magic 7 6.8 165;Red Magic 8 Pro 6.8 120;Red Magic 9 Pro 6.8 120;Black Shark 4 6.67 144;Lenovo Legion Duel 6.92 144",
+"LG":"K22 6.2 60;K41S 6.55 60;K51S 6.55 60;K52 6.59 60;K61 6.53 60;K62 6.59 60;G8X 6.4 60;Velvet 6.8 60",
+"Outro":"Outro (informar medidas) 6.5 60"};
+const PRE={"Samsung":"Galaxy ","Motorola":"Moto ","Poco":"Poco ","Realme":"Realme ","Oppo":"Oppo ","Vivo":"Vivo ","OnePlus":"OnePlus ","Honor":"Honor ","Google Pixel":"Pixel ","LG":"LG ","Apple (iOS)":"iPhone "};
+function label(b,m){let p=PRE[b]||"";if(b=="Xiaomi"&&/^(\d|A\d|Note)/.test(m))p="Redmi ";
+ if(b=="Apple (iOS)"&&/^iPad/.test(m))p="";
+ const w=p.trim();return(w&&m.toLowerCase().startsWith(w.toLowerCase()))?m:p+m;}
+const P=[];for(const b in D)for(const s of D[b].split(";")){
+ const x=s.trim().match(/^(.*?) ([\d.]+) (\d+)(?: ([\d.]+))?$/);if(!x)continue;
+ P.push({b,m:label(b,x[1]),d:+x[2],hz:+x[3],r:x[4]?+x[4]:2.2});}
+
+
+const $=id=>document.getElementById(id);
+const store=(k,v)=>{try{if(v===undefined){const x=localStorage.getItem(k);return x?JSON.parse(x):null}localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}};
+const rm=k=>{try{localStorage.removeItem(k)}catch(e){}};
+$("brand").innerHTML=Object.keys(D).map(b=>`<option>${b}</option>`).join("");
+const CONFIG={
+ price:{normal:4.99,proibida:10},
+ payUrl:{normal:"",proibida:""}, // cole aqui o link de pagamento (Pix, Mercado Pago, etc.)
+ appUrl:"" // vazio = usa o endereço atual do site automaticamente
+};
+CONFIG.appUrl=CONFIG.appUrl||(/^https?:/.test(location.origin)?location.origin:"");
+let UN=store("ffsensi_unlock");if(!UN||typeof UN!="object")UN={normal:false,proibida:false};
+const N={normal:1,proibida:1},out={normal:"",proibida:""},VIEWS=["home","gen","pro","hist","me"];
+let hist=store("ffsensi_hist");if(!Array.isArray(hist))hist=[];
+let tt;function toast(m,bad){const t=$("toast");t.textContent=m;t.className="toast on"+(bad?" bad":"");clearTimeout(tt);tt=setTimeout(()=>t.className="toast",2200)}
+function fill(){const b=$("brand").value,q=$("q").value.trim().toLowerCase();
+ const l=P.filter(p=>p.b==b&&p.m.toLowerCase().includes(q));
+ $("model").innerHTML=l.length?l.map(p=>`<option>${p.m}</option>`).join(""):"<option value=''>Nenhum modelo encontrado</option>";}
+function cur(){const b=$("brand").value,m=$("model").value;const p=P.find(p=>p.b==b&&p.m==m);if(!p)return null;
+ if(b=="Outro"){const d=parseFloat($("cd").value),hz=parseInt($("chz").value,10);
+  const okd=d>=4&&d<=13,okh=hz>=30&&hz<=165;
+  $("cd").setAttribute("aria-invalid",!okd);$("chz").setAttribute("aria-invalid",!okh);
+  $("cerr").textContent=okd&&okh?"":"Informe a tela entre 4 e 13 polegadas e a taxa entre 30 e 165 Hz.";
+  if(!okd||!okh)return null;
+  return{k:"outro"+d+"_"+hz+$("cos").value,d,hz,r:d>8?1.4:2.1,ios:$("cos").value=="i",name:"Celular personalizado"};}
+ return{k:b+m,d:p.d,hz:p.hz,r:p.r,ios:b=="Apple (iOS)",name:m};}
+function rng(s){return()=>{s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function hash(s){let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+const RG={normal:{g:[172,198],p:[168,198],x2:[150,190],x4:[130,176],a:[70,120],o:[115,170]},
+proibida:{g:[192,200],p:[194,200],x2:[178,200],x4:[158,190],a:[98,128],o:[148,188]}};
+function readCal(){const v=id=>$(id).value.trim();let err="",btn=null,dp=null;const p=v("cal-pct"),m=v("cal-mm"),d=v("cal-dp");
+ if(p||m){const pn=parseFloat(p),mn=parseFloat(m);if(pn>=10&&pn<=200&&mn>=3&&mn<=30)btn={pct:pn,mm:mn};else err="Para calibrar o botão, informe o tamanho atual (10 a 200%) e o diâmetro medido (3 a 30 mm).";}
+ if(d){const dn=parseFloat(d);if(dn>=240&&dn<=800)dp=dn;else err+=(err?" ":"")+"A menor largura deve ficar entre 240 e 800 dp.";}
+ $("calerr").textContent=err;return{btn,dp}}
+function calc(kind){const c=cur();if(!c)return null;const style=+$("style").value;
+const cal=readCal();
+ const shortMm=25.4*c.d/Math.sqrt(1+c.r*c.r),tgt={2:10,3:9,4:8}[style];
+ const base=cal.btn?cal.btn.mm/(cal.btn.pct/100):0.16*shortMm;
+ const cp=x=>Math.max(20,Math.min(200,Math.round(x)));
+ const pct=cp(tgt/base*100),lo=cp(7/base*100),hi=cp(10/base*100),mm=Math.round(base*pct/10)/10,fp=Math.min(30,mm/(shortMm*c.r)*100);
+ const r=rng(hash(c.k+kind)+N[kind]*7919),B=kind=="normal"?(c.hz>=120?6:c.hz>=90?3:0)+(c.d>6.6?5:0)+(c.d>8?10:0):0,K=RG[kind];
+ const g=([a,b])=>Math.min(200,Math.round(a+B+r()*(b-a)));
+ const v=[["Geral",g(K.g)],["Ponto vermelho",g(K.p)],["Mira 2x",g(K.x2)],["Mira 4x",g(K.x4)],["AWM",g(K.a)],["Olhadinha",g(K.o)]];
+ let dpi,dpiLab,note;
+ if(c.ios){dpi="Fixo";dpiLab="DPI (iOS)";note="O iOS não permite mudar o DPI. No iPhone e no iPad, ajuste só a sensibilidade e o HUD no jogo.";}
+ else if(cal.dp){dpi=Math.round(cal.dp*0.9/10)*10+"–"+Math.round(cal.dp*1.1/10)*10;dpiLab="Faixa de teste (dp)";note="Seu valor atual é "+cal.dp+" dp. Anote-o antes de mexer e, se quiser testar, fique perto dele (cerca de 10% para cada lado, uma regra prática nossa). Mude só uma coisa por vez: DPI, HUD ou sensibilidade.";}
+ else{dpi="Padrão";dpiLab="Menor largura (dp)";note="No Android, o DPI dos tutoriais é o campo Menor largura (dp), nas Opções do desenvolvedor. Mantenha o padrão do aparelho, que costuma ficar entre 360 e 411 dp. Não há prova de que um valor específico seja melhor. Se quiser testar, informe o seu valor atual em Calibrar.";}
+ const text=`Amigos.sensei${kind=="proibida"?" PROIBIDA":""} – ${c.name}\n`+v.map(([k,x])=>`${k}: ${x}`).join("\n")+`\n${dpiLab}: ${dpi}\nBotão de atirar: ${pct}% (cerca de ${mm} mm)`;
+ return{c,v,pct,dpi,dpiLab,note,text,style,mm,lo,hi,fp,tgt,cal:!!cal.btn};}
+const bars=(v,lk)=>`<div class="${lk?"blur":""}" style="display:grid;gap:15px">`+v.map(([k,x])=>`<div class="bar"><span>${k}</span><div class="track"><div class="fill" style="width:${x/2}%"></div></div><b>${lk?"••":x}</b></div>`).join("")+"</div>";
+const ACT=["gen","copy","save","me","pgen","pcopy","psave"];
+function paint(){
+ $("custom").classList.toggle("hidden",$("brand").value!="Outro");
+ const a=calc("normal"),b=calc("proibida");
+ ACT.forEach(i=>$(i).disabled=!a);
+ if(!a){out.normal=out.proibida="";const msg='<p class="note" style="margin:0">Escolha um modelo válido para ver a sensibilidade.</p>';
+  $("g-bars").innerHTML=msg;$("p-bars").innerHTML=msg;["g-pct","g-dpi","p-pct","p-dpi"].forEach(i=>$(i).textContent="–");
+  $("spec").textContent="";$("p-phone").textContent="Nenhum celular";$("h-line").textContent="Selecione um celular";$("g-why").textContent=$("g-dpinote").textContent="";return}
+ $("spec").textContent=`${a.c.d}" · ${a.c.hz} Hz · ${a.c.ios?"iOS":"Android"}`;
+ $("g-bars").innerHTML=bars(a.v,!UN.normal);$("g-pct").textContent=a.pct+"%";$("g-pctlab").textContent="Botão de atirar · cerca de "+a.mm+" mm";$("g-dpi").textContent=a.dpi;$("g-os").textContent=a.dpiLab;
+ $("g-phone").style.aspectRatio=a.c.r;$("g-fire").style.width=a.fp+"%";
+ $("g-why").textContent=`Meta física: cerca de ${a.tgt} mm para ${a.style} dedos (o Google recomenda 7 a 10 mm para toques). Faixa segura: ${a.lo}% a ${a.hi}%. `+(a.cal?"Calculado com o seu botão medido.":"O tamanho do botão padrão é uma estimativa, porque a Garena não publica esse valor. Use Calibrar para ficar exato.");
+ $("g-dpinote").textContent=a.note;out.normal=a.text;
+ $("p-bars").innerHTML=bars(b.v,!UN.proibida);$("p-pct").textContent=b.pct+"%";$("p-dpi").textContent=b.dpi;$("p-phone").textContent=b.c.name;out.proibida=b.text;
+ $("h-line").textContent=a.c.name+" selecionado";
+}
+const brl=n=>"R$ "+(Number.isInteger(n)?String(n):n.toFixed(2).replace(".",","));
+function lockMsg(k){toast("Desbloqueie por "+brl(CONFIG.price[k])+" para usar",1);const el=$("pay-"+k);if(el&&!el.classList.contains("hidden"))el.scrollIntoView({behavior:"smooth",block:"center"})}
+function renderPay(){["normal","proibida"].forEach(k=>{const el=$("pay-"+k),lk=!UN[k],pr=CONFIG.price[k];el.classList.toggle("hidden",!lk);el.innerHTML="";if(!lk)return;
+ const t=document.createElement("div");t.innerHTML=`<div class="price">${brl(pr)}</div><p class="note" style="margin:6px 0 14px">${k=="normal"?"Sensi normal":"Sensi proibida"} liberada para qualquer celular da lista.</p>`;
+ const a=document.createElement("a");a.className="btn";a.textContent="Comprar por "+brl(pr);a.href=CONFIG.payUrl[k]||"#";a.target="_blank";a.rel="noopener";
+ a.onclick=e=>{if(!CONFIG.payUrl[k]){e.preventDefault();toast("Link de pagamento ainda não configurado",1)}};
+ const b=document.createElement("button");b.className="btn alt";b.style.cssText="margin-top:10px;width:100%";b.textContent="Já paguei: inserir código";
+ const f=document.createElement("div");f.className="hidden";f.style.marginTop="12px";
+ const i=document.createElement("input");i.placeholder="Código de acesso";i.autocomplete="off";i.autocapitalize="characters";i.spellcheck=false;i.setAttribute("aria-label","Código de acesso");
+ const v=document.createElement("button");v.className="btn";v.style.cssText="margin-top:10px;width:100%";v.textContent="Validar código";
+ const e=document.createElement("p");e.className="err";e.setAttribute("role","alert");
+ b.onclick=()=>{f.classList.toggle("hidden");i.focus()};
+ let busy=0;
+ const ok=async()=>{const c=i.value.trim();if(!c){e.textContent="Digite o código.";return}if(busy)return;busy=1;v.disabled=true;e.textContent="";
+  try{const r=await fetch("/api/validate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({kind:k,code:c})});
+   const j=await r.json().catch(()=>({}));
+   if(r.ok&&j.ok){UN[k]=true;store("ffsensi_unlock",UN);toast("Liberado!");renderPay();plans();paint();return}
+   e.textContent=r.status==429?"Muitas tentativas. Aguarde um minuto.":"Código inválido."}
+  catch(err){e.textContent="Sem conexão. Tente de novo."}
+  finally{busy=0;v.disabled=false}};
+ v.onclick=ok;i.onkeydown=ev=>{if(ev.key=="Enter")ok()};
+ f.append(i,v,e);el.append(t,a,b,f)})}
+function plans(){const el=$("plan-list");el.innerHTML="";[["normal","Sensi normal"],["proibida","Sensi proibida"]].forEach(([k,n])=>{
+ const r=document.createElement("div");r.className="plan";const s=document.createElement("span");s.textContent=n;
+ const p=document.createElement("b");p.textContent=UN[k]?"Liberada":brl(CONFIG.price[k]);
+ const bt=document.createElement("button");bt.className="btn"+(UN[k]?" alt":"");bt.textContent=UN[k]?"Abrir":"Comprar";bt.onclick=()=>show(k=="normal"?"gen":"pro");
+ r.append(s,p,bt);el.append(r)})}
+function stats(){$("h-phones").textContent=P.length;$("h-saved").textContent=hist.length}
+function renderHist(){const el=$("hist");el.innerHTML="";
+ $("clear").classList.toggle("hidden",!hist.length);
+ if(!hist.length){el.innerHTML='<div class="card"><p class="note" style="margin:0">Nada salvo ainda. Gere uma sensi e toque em "Salvar no histórico".</p></div>';return}
+ hist.forEach((h,i)=>{const d=document.createElement("div");d.className="card"+(h.k=="proibida"?" hot":"");
+  const m=document.createElement("div");m.className="meta";const dt=document.createElement("span");dt.textContent=new Date(h.d).toLocaleString("pt-BR");
+  const ch=document.createElement("span");ch.className="chip"+(h.k=="proibida"?" p":"");ch.textContent=h.k=="proibida"?"Proibida":"Normal";m.append(dt,ch);
+  const p=document.createElement("pre");p.textContent=h.t;
+  const r=document.createElement("div");r.className="row";r.style.marginTop="0";
+  const c=document.createElement("button");c.className="btn alt";c.textContent="Copiar";c.onclick=()=>copy(h.t);
+  const x=document.createElement("button");x.className="btn danger";x.textContent="Apagar";x.onclick=()=>{hist.splice(i,1);store("ffsensi_hist",hist);renderHist();stats();toast("Removido")};
+  r.append(c,x);d.append(m,p,r);el.append(d)});}
+async function copy(t){if(!t){toast("Escolha um celular válido",1);return}
+ try{await navigator.clipboard.writeText(t);toast("Copiado")}
+ catch(e){try{const a=document.createElement("textarea");a.value=t;a.style.cssText="position:fixed;opacity:0";document.body.append(a);a.select();const ok=document.execCommand("copy");a.remove();toast(ok?"Copiado":"Não foi possível copiar",!ok)}catch(e2){toast("Não foi possível copiar",1)}}}
+function save(kind){if(!out[kind]){toast("Escolha um celular válido",1);return}hist.unshift({d:Date.now(),k:kind,t:out[kind]});hist=hist.slice(0,50);store("ffsensi_hist",hist);renderHist();stats();toast("Salvo no histórico")}
+function show(v,push=true){if(!VIEWS.includes(v))v="home";
+ document.querySelectorAll(".view").forEach(e=>e.classList.toggle("on",e.id=="v-"+v));
+ document.querySelectorAll("nav button").forEach(b=>{if(b.dataset.v==v)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+ if(push){try{history.pushState({v},"","#"+v)}catch(e){}}
+ window.scrollTo(0,0);if(v=="me")renderMe();if(v=="hist")renderHist();
+ const h=document.querySelector("#v-"+v+" h1");if(h)h.focus({preventScroll:true})}
+function renderMe(){const me=store("ffsensi_me");$("me-text").textContent=me?`${me.m} · ${me.s} dedos`:"Nenhum celular salvo ainda.";$("me-use").classList.toggle("hidden",!me);$("me-del").classList.toggle("hidden",!me)}
+function setPhone(b,m,s){$("brand").value=b;$("q").value="";fill();$("model").value=m;if(s)$("style").value=s;N.normal=N.proibida=1;paint()}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>show(b.dataset.v));
+addEventListener("popstate",e=>show(e.state&&e.state.v||"home",false));
+$("go-gen").onclick=()=>show("gen");
+let dp=null;addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e});
+$("install").onclick=()=>{if(dp){dp.prompt();dp=null}else{const d=document.querySelector("#inst-box details");if(d)d.open=true;$("inst-box").scrollIntoView({behavior:"smooth",block:"center"})}};
+$("brand").onchange=()=>{$("q").value="";fill();N.normal=N.proibida=1;paint()};
+$("q").oninput=()=>{fill();N.normal=N.proibida=1;paint()};
+["model","style","cd","chz","cos","cal-pct","cal-mm","cal-dp"].forEach(i=>$(i).addEventListener("input",()=>{if(i=="model")N.normal=N.proibida=1;paint()}));
+$("gen").onclick=()=>{N.normal++;paint()};$("pgen").onclick=()=>{N.proibida++;paint()};
+$("copy").onclick=()=>UN.normal?copy(out.normal):lockMsg("normal");$("pcopy").onclick=()=>UN.proibida?copy(out.proibida):lockMsg("proibida");
+$("save").onclick=()=>UN.normal?save("normal"):lockMsg("normal");$("psave").onclick=()=>UN.proibida?save("proibida"):lockMsg("proibida");
+$("me").onclick=()=>{if(!cur()){toast("Escolha um celular válido",1);return}store("ffsensi_me",{b:$("brand").value,m:$("model").value,s:$("style").value});toast("Celular salvo no perfil")};
+$("me-use").onclick=()=>{const me=store("ffsensi_me");if(me&&P.some(p=>p.b==me.b&&p.m==me.m)){setPhone(me.b,me.m,me.s);show("gen")}else toast("Celular salvo não encontrado",1)};
+$("me-del").onclick=()=>{rm("ffsensi_me");renderMe();toast("Removido")};
+let cf=0;$("clear").onclick=()=>{if(!cf){cf=1;$("clear").textContent="Toque de novo para confirmar";setTimeout(()=>{cf=0;$("clear").textContent="Apagar histórico"},3000);return}
+ cf=0;$("clear").textContent="Apagar histórico";hist=[];store("ffsensi_hist",hist);renderHist();stats();toast("Histórico apagado")};
+$("applink-box").classList.toggle("hidden",!CONFIG.appUrl);$("applink-text").textContent=CONFIG.appUrl;$("applink").onclick=()=>copy(CONFIG.appUrl);
+renderPay();plans();
+const me=store("ffsensi_me");
+if(me&&P.some(p=>p.b==me.b&&p.m==me.m))setPhone(me.b,me.m,me.s);else setPhone("Poco","Poco X8 Pro");
+stats();renderHist();renderMe();
+try{const h=location.hash.slice(1);if(VIEWS.includes(h)){show(h,false);history.replaceState({v:h},"","#"+h)}else history.replaceState({v:"home"},"","#home")}catch(e){}
+</script>
+</body>
+</html>
